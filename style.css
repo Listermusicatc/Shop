@@ -1,0 +1,291 @@
+/* page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aliceblue;
+    box-shadow: black;
+    z-index: 999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(1, 11, 11);
+    transition: 0.4s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(0, 255, 255);
+
+}
+
+/* ladding page */
+
+#hero {
+    background-image: url(public/img/backgroundimg.png);
+    height: 92.1vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    color: rgb(54, 0, 0);
+    font-size: 69px;
+    padding-bottom: 15px;
+}
+
+#hero h2 {
+    color: rgb(87, 5, 7);
+    font-size: 30px;
+}
+
+#hero p {
+    padding-bottom: 15px;
+}
+
+/* product page */
+
+#product {
+    height: 100vh;
+    text-align: center;
+}
+
+#product .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product .pro {
+
+
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    padding-bottom: 100px;
+    border: 1px solid#cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(54, 10, 10, 0.06)
+}
+
+#product .pro img {
+    height: 17rem;
+
+}
+
+#product .pro .des {
+    text-align: start;
+    padding: 10px;
+}
+
+#product .pro .des span {
+    color: #606063;
+    font-size: 12px;
+
+
+}
+
+#product .pro .des h5 {
+    padding-top: 7px;
+    color: aqua;
+    font-size: 14px;
+}
+
+#product .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+.cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+
+    color: #088178;
+    border: 1px solid;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+.foncolor{
+    color: aqua;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/public/img/banner2.jpg');
+    width: 100%;
+    height: 35vh;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer.follow {
+    margin-top: 20px;
+}
+
+footer.follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer.follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70%;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
